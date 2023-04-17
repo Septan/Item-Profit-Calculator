@@ -6,7 +6,7 @@ from PIL import ImageTk, Image
 # Create the main window
 root = tk.Tk()
 root.title("Market Calculator")
-root.geometry('900x510')
+root.geometry('1150x510')
 
 
 # Create tabs
@@ -1094,5 +1094,43 @@ button_clear.grid(row=8, column=3)
 
 result_label_tab2 = tk.Label(tab2)
 result_label_tab2.grid(row=13, column=0, columnspan=15)
+
+# Define function to calculate the product
+def calculate():
+    # Get the selected factor and user input
+    factor = int(factor_var.get())
+    num = int(num_entry.get())
+
+    # Calculate the product and update the label
+    product = factor * num
+    product_label.config(text=str(product))
+
+# Define function to clear the input and result
+def clear():
+    num_entry.delete(0, tk.END)
+    product_label.config(text="")
+
+# Create drop-down menu for selecting number to multiply by
+factor_var = tk.StringVar(value="2")
+factor_label = tk.Label(tab1, text="Select number to multiply by:")
+factor_label.grid(row=2, column=14)
+factor_menu = tk.OptionMenu(tab1, factor_var, "2", "3")
+factor_menu.grid(row=2, column=15)
+
+# Create label and entry for user input
+num_label = tk.Label(tab1, text="Enter a number:")
+num_label.grid(row=1, column=14)
+num_entry = tk.Entry(tab1, width=10)
+num_entry.grid(row=1, column=15)
+
+# Create calculate and clear buttons
+calculate_button = tk.Button(tab1, text="Calculate", command=calculate)
+calculate_button.grid(row=3, column=14)
+clear_button = tk.Button(tab1, text="Clear", command=clear)
+clear_button.grid(row=3, column=15)
+
+# Create label to display the product
+product_label = tk.Label(tab1, text="")
+product_label.grid(row=4, column=15)
 
 root.mainloop()

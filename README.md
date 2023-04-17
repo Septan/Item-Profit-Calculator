@@ -28,4 +28,4 @@ Clone the repository and run the script in your terminal using Python 3.
 ```bash
 git clone https://github.com/Septan/Item-Profit-Calculator.git
 cd Item-Profit-Calculator
-python3 Item-Profit-Calculator.py
+python Item-Profit-Calculator.py

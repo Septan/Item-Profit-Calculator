@@ -3,11 +3,10 @@ from tkinter import ttk
 from PIL import ImageTk, Image
 
 
-
 # Create the main window
 root = tk.Tk()
 root.title("Market Calculator")
-root.geometry('850x510')
+root.geometry('900x510')
 
 
 # Create tabs

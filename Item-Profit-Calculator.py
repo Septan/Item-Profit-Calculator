@@ -7,6 +7,7 @@ from PIL import ImageTk, Image
 # Create the main window
 root = tk.Tk()
 root.title("Market Calculator")
+root.geometry('850x510')
 
 
 # Create tabs

@@ -26,6 +26,6 @@ To use the program, simply run the script and enter the necessary information wh
 Clone the repository and run the script in your terminal using Python 3.
 
 ```bash
-git clone https://github.com/yourusername/item-profit-calculator.git
-cd item-profit-calculator
-python3 item_profit_calculator.py
+git clone https://github.com/Septan/Item-Profit-Calculator.git
+cd Item-Profit-Calculator
+python3 Item-Profit-Calculator.py

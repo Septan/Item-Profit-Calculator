@@ -466,8 +466,8 @@ label60.grid(row=8, column=12)
 res_label = tk.Label(tab1, text="")
 res_label.grid(row=8, column=13)
 
-label61 = tk.Label(tab1, text="Barnacle's Ship 299%\nBarnacle's Train 483%")
-label61.grid(row=9, column=12)
+# label61 = tk.Label(tab1, text="Barnacle's Ship 299%\nBarnacle's Train 483%")
+# label61.grid(row=9, column=12)
 
 def calculate_sum():
     # Get the input values from the entry widgets

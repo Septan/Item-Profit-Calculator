@@ -15,7 +15,7 @@ In addition, the program also has a feature that calculates the total price of i
 ## Requirements
 
 - Python 3.x
-- No additional packages or modules are required.
+- pip install Pillow
 
 ## Usage
 

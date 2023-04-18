@@ -887,11 +887,11 @@ def calculate():
 
     # Compare the percentages to determine where it's better to sell
     if percentage_market < percentage_barn:
-        result_label.config(text="It's better to sell at the market.\nThe percentage difference is {:.2f}% in favor of the market.".format(percentage_barn - percentage_market))
+        result_label_tab1.config(text="It's better to sell at the market.\nThe percentage difference is {:.2f}% in favor of the market.".format(percentage_barn - percentage_market))
     elif percentage_market > percentage_barn:
-        result_label.config(text="It's better to sell at the barn.\nThe percentage difference is {:.2f}% in favor of the barn.".format(percentage_market - percentage_barn))
+        result_label_tab1.config(text="It's better to sell at the barn.\nThe percentage difference is {:.2f}% in favor of the barn.".format(percentage_market - percentage_barn))
     elif percentage_market == percentage_barn:
-        result_label.config(text="It doesn't matter where you sell.")
+        result_label_tab1.config(text="It doesn't matter where you sell.")
 
 def clear():
     # Clear all the entry widgets
@@ -903,7 +903,7 @@ def clear():
                   entry51, entry52, entry59]
     for entry in entry_list:
         entry.delete(0, tk.END)
-    result_label.config(text="")
+    result_label_tab1.config(text="")
 
 button_calulate = tk.Button(tab1, text="Calculate", command=calculate)
 button_calulate.grid(row=12, column=2)
@@ -911,8 +911,8 @@ button_calulate.grid(row=12, column=2)
 button_clear = tk.Button(tab1, text="Clear", command=clear)
 button_clear.grid(row=12, column=3)
 
-result_label = tk.Label(tab1)
-result_label.grid(row=13, column=0, columnspan=15)
+result_label_tab1 = tk.Label(tab1)
+result_label_tab1.grid(row=13, column=0, columnspan=15)
 
 
 # Tropical Island Market
@@ -1115,7 +1115,7 @@ def clear():
                   entry71, entry72, entry73, entry74, entry75]
     for entry in entry_list:
         entry.delete(0, tk.END)
-    result_label.config(text="")
+    result_label_tab2.config(text="")
 
 button_calulate = tk.Button(tab2, text="Calculate", command=calculate_island)
 button_calulate.grid(row=8, column=2)
@@ -1362,7 +1362,7 @@ def clear():
                   entry86, entry87, entry88, entry89, entry90]
     for entry in entry_list:
         entry.delete(0, tk.END)
-    result_label.config(text="")
+    result_label_tab3.config(text="")
 
 button_calulate = tk.Button(tab3, text="Calculate", command=calculate_candy)
 button_calulate.grid(row=8, column=2)

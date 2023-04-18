@@ -1364,7 +1364,7 @@ def clear():
         entry.delete(0, tk.END)
     result_label.config(text="")
 
-button_calulate = tk.Button(tab3, text="Calculate", command=calculate_island)
+button_calulate = tk.Button(tab3, text="Calculate", command=calculate_candy)
 button_calulate.grid(row=8, column=2)
 
 button_clear = tk.Button(tab3, text="Clear", command=clear)

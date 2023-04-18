@@ -19,6 +19,9 @@ tab_control.add(tab1, text="Main Market")
 tab2 = ttk.Frame(tab_control)
 tab_control.add(tab2, text="Tropical Island Farm")
 
+tab3 = ttk.Frame(tab_control)
+tab_control.add(tab3, text="Candy Farm")
+
 tab_control.pack(expand=1, fill='both')
 
 # Load the image
@@ -88,6 +91,20 @@ summerslush_image = Image.open("assets/summerslush.png")
 nutsandgrapes_image = Image.open("assets/nutsandgrapes.png")
 fruityflip_image = Image.open("assets/fruityflip.png")
 tropicstar_image = Image.open("assets/tropicstar.png")
+sugarbeets_image = Image.open("assets/sugarbeets.png")
+sugarcane_image = Image.open("assets/sugarcane.png")
+cottoncandygrapes_image = Image.open("assets/cottoncandygrapes.png")
+alpacas_image = Image.open("assets/alpacas.png")
+donkeys_image = Image.open("assets/donkeys.png")
+bonitaalmonds_image = Image.open("assets/bonitaalmonds.png")
+sweetheartcherries_image = Image.open("assets/sweetheartcherries.png")
+criollocacao_image = Image.open("assets/criollocacao.png")
+syrup_image = Image.open("assets/syrup.png")
+sugarfigures_image = Image.open("assets/sugarfigures.png")
+marzipan_image = Image.open("assets/marzipan.png")
+candy_image = Image.open("assets/candy.png")
+pralines_image = Image.open("assets/pralines.png")
+weddingcakes_image = Image.open("assets/weddingcakes.png")
 
 # Create a dictionary to store the images
 assets = {
@@ -157,6 +174,20 @@ assets = {
     "Nuts and Grapes": ImageTk.PhotoImage(nutsandgrapes_image),
     "Fruity Flip": ImageTk.PhotoImage(fruityflip_image),
     "Tropic Star": ImageTk.PhotoImage(tropicstar_image),
+    "Sugar Beets": ImageTk.PhotoImage(sugarbeets_image),
+    "Sugar Cane": ImageTk.PhotoImage(sugarcane_image),
+    "Cotton Candy Grapes": ImageTk.PhotoImage(cottoncandygrapes_image),
+    "Alpacas": ImageTk.PhotoImage(alpacas_image),
+    "Donkeys": ImageTk.PhotoImage(donkeys_image),
+    "Bonita Almonds": ImageTk.PhotoImage(bonitaalmonds_image),
+    "Sweetheart Cherries": ImageTk.PhotoImage(sweetheartcherries_image),
+    "Criollo Cacao": ImageTk.PhotoImage(criollocacao_image),
+    "Syrup": ImageTk.PhotoImage(syrup_image),
+    "Sugar Figures": ImageTk.PhotoImage(sugarfigures_image),
+    "Marzipan": ImageTk.PhotoImage(marzipan_image),
+    "Candy": ImageTk.PhotoImage(candy_image),
+    "Pralines": ImageTk.PhotoImage(pralines_image),
+    "Wedding Cakes": ImageTk.PhotoImage(weddingcakes_image),
 }
 
 # # Set the window size and position it in the center of the screen
@@ -884,11 +915,11 @@ result_label = tk.Label(tab1)
 result_label.grid(row=13, column=0, columnspan=15)
 
 
-# Another Calculator tab
+# Tropical Island Market
 label3 = tk.Label(tab2, text="Tropical Island Market")
 label3.grid(row=0, column=0, columnspan=15, sticky="nsew")
 
-# Add widgets for calculator 2 here
+# Add widgets for Tropical Island Market
 label61 = tk.Label(tab2, image=assets["Oranges"])
 label61.grid(row=1, column=0)
 entry61 = tk.Entry(tab2, width=10)
@@ -1132,5 +1163,214 @@ clear_button.grid(row=3, column=15)
 # Create label to display the product
 product_label = tk.Label(tab1, text="")
 product_label.grid(row=4, column=15)
+
+
+# Candy Farm
+label3 = tk.Label(tab3, text="Candy Farm Market")
+label3.grid(row=0, column=0, columnspan=15, sticky="nsew")
+
+# Add widgets for calculator 2 here
+label76 = tk.Label(tab3, image=assets["Sugar Beets"])
+label76.grid(row=1, column=0)
+entry76 = tk.Entry(tab3, width=10)
+entry76.grid(row=1, column=1)
+
+label77 = tk.Label(tab3, image=assets["Sugar Cane"])
+label77.grid(row=2, column=0)
+entry77 = tk.Entry(tab3, width=10)
+entry77.grid(row=2, column=1)
+
+label78 = tk.Label(tab3, image=assets["Cotton Candy Grapes"])
+label78.grid(row=3, column=0)
+entry78 = tk.Entry(tab3, width=10)
+entry78.grid(row=3, column=1)
+
+label79 = tk.Label(tab3, image=assets["Alpacas"])
+label79.grid(row=4, column=0)
+entry79 = tk.Entry(tab3, width=10)
+entry79.grid(row=4, column=1)
+
+label80 = tk.Label(tab3, image=assets["Donkeys"])
+label80.grid(row=5, column=0)
+entry80 = tk.Entry(tab3, width=10)
+entry80.grid(row=5, column=1)
+
+label81 = tk.Label(tab3, image=assets["Bonita Almonds"])
+label81.grid(row=6, column=0)
+entry81 = tk.Entry(tab3, width=10)
+entry81.grid(row=6, column=1)
+
+label82 = tk.Label(tab3, image=assets["Sweetheart Cherries"])
+label82.grid(row=7, column=0)
+entry82 = tk.Entry(tab3, width=10)
+entry82.grid(row=7, column=1)
+
+label83 = tk.Label(tab3, image=assets["Criollo Cacao"])
+label83.grid(row=8, column=0)
+entry83 = tk.Entry(tab3, width=10)
+entry83.grid(row=8, column=1)
+
+label84 = tk.Label(tab3, image=assets["Syrup"])
+label84.grid(row=1, column=2)
+entry84 = tk.Entry(tab3, width=10)
+entry84.grid(row=1, column=3)
+
+label85 = tk.Label(tab3, image=assets["Sugar Figures"])
+label85.grid(row=2, column=2)
+entry85 = tk.Entry(tab3, width=10)
+entry85.grid(row=2, column=3)
+
+label86 = tk.Label(tab3, image=assets["Marzipan"])
+label86.grid(row=3, column=2)
+entry86 = tk.Entry(tab3, width=10)
+entry86.grid(row=3, column=3)
+
+label87 = tk.Label(tab3, image=assets["Candy"])
+label87.grid(row=4, column=2)
+entry87 = tk.Entry(tab3, width=10)
+entry87.grid(row=4, column=3)
+
+label88 = tk.Label(tab3, image=assets["Pralines"])
+label88.grid(row=5, column=2)
+entry88 = tk.Entry(tab3, width=10)
+entry88.grid(row=5, column=3)
+
+label89 = tk.Label(tab3, image=assets["Wedding Cakes"])
+label89.grid(row=6, column=2)
+entry89 = tk.Entry(tab3, width=10)
+entry89.grid(row=6, column=3)
+
+label90 = tk.Label(tab3, text="Total sell price:")
+label90.grid(row=7, column=2)
+entry90 = tk.Entry(tab3, width=10)
+entry90.grid(row=7, column=3)
+
+def calculate_candy():
+    # Get the input values from the entry widgets
+    try:
+        num_sugar_beets = int(entry76.get())
+    except ValueError:
+        num_sugar_beets = 0
+
+    try:
+        num_sugar_cane = int(entry77.get())
+    except ValueError:
+        num_sugar_cane = 0
+
+    try:
+        num_cotton_candy_grapes = int(entry78.get())
+    except ValueError:
+        num_cotton_candy_grapes = 0
+
+    try:
+        num_alpacas = int(entry79.get())
+    except ValueError:
+        num_alpacas = 0
+
+    try:
+        num_donkeys = int(entry80.get())
+    except ValueError:
+        num_donkeys = 0
+
+    try:
+        num_bonita_almonds = int(entry81.get())
+    except ValueError:
+        num_bonita_almonds = 0
+
+    try:
+        num_sweetheart_cherries = int(entry82.get())
+    except ValueError:
+        num_sweetheart_cherries = 0
+
+    try:
+        num_criollo_cacao = int(entry83.get())
+    except ValueError:
+        num_criollo_cacao = 0
+
+    try:
+        num_syrup = int(entry84.get())
+    except ValueError:
+        num_syrup = 0
+
+    try:
+        num_sugar_figures = float(entry85.get())
+    except ValueError:
+        num_sugar_figures = 0
+
+    try:
+        num_marzipan = float(entry86.get())
+    except ValueError:
+        num_marzipan = 0
+
+    try:
+        num_candy = float(entry87.get())
+    except ValueError:
+        num_candy = 0
+
+    try:
+        num_pralines = float(entry88.get())
+    except ValueError:
+        num_pralines = 0
+
+    try:
+        num_wedding_cakes = float(entry89.get())
+    except ValueError:
+        num_wedding_cakes = 0
+
+    try:
+        total_sell_price_candy = float(entry90.get())
+    except ValueError:
+        total_sell_price_candy = 0
+
+    # Set the price of each item
+    sugar_beets_price = 4
+    sugar_cane_price = 4
+    cotton_candy_grapes_price = 15
+    alpacas_price = 0
+    donkeys_price = 0
+    bonita_almonds_price = 550
+    sweetheart_cherries_price = 400
+    criollo_cacao_price = 1150
+    syrup_price = 0
+    sugar_figures_price = 0
+    marzipan_price = 104
+    candy_price = 0
+    pralines_price = 0
+    wedding_cakes_price = 0
+
+    # Calculate the total price of all items the user has
+    total_price_candy = (num_sugar_beets * sugar_beets_price) + (num_sugar_cane * sugar_cane_price) + (num_cotton_candy_grapes * cotton_candy_grapes_price) + (num_alpacas * alpacas_price) + (num_donkeys * donkeys_price) + (num_bonita_almonds * bonita_almonds_price) + (num_sweetheart_cherries * sweetheart_cherries_price) + (num_criollo_cacao * criollo_cacao_price) + (num_syrup * syrup_price) + (num_sugar_figures * sugar_figures_price) + (num_marzipan * marzipan_price) + (num_candy * candy_price) + (num_pralines * pralines_price) + (num_wedding_cakes * wedding_cakes_price)
+
+    # Calculate the percentage of the total sell price that the total price of all items represents
+    percentage_candy = (total_price_candy / total_sell_price_candy) * 100
+
+    # Calculate the percentage of the total price that the total sell price at the barn represents
+    percentage_barn = (total_sell_price_candy / total_price_candy) * 100
+
+    # Compare the percentages to determine where it's better to sell
+    if percentage_candy < percentage_barn:
+        result_label_tab3.config(text="It's better to sell at the adventure market.\nThe percentage difference is {:.2f}% in favor of the adventure market.".format(percentage_barn - percentage_candy))
+    elif percentage_candy > percentage_barn:
+        result_label_tab3.config(text="It's better to sell at the barn.\nThe percentage difference is {:.2f}% in favor of the barn.".format(percentage_candy - percentage_barn))
+    elif percentage_candy == percentage_barn:
+        result_label_tab3.config(text="It doesn't matter where you sell.")
+
+def clear():
+    # Clear all the entry widgets
+    entry_list = [entry76, entry77, entry78, entry79, entry80,
+                  entry81, entry82, entry83, entry84, entry85,
+                  entry86, entry87, entry88, entry89, entry90]
+    for entry in entry_list:
+        entry.delete(0, tk.END)
+    result_label.config(text="")
+
+button_calulate = tk.Button(tab3, text="Calculate", command=calculate_island)
+button_calulate.grid(row=8, column=2)
+
+button_clear = tk.Button(tab3, text="Clear", command=clear)
+button_clear.grid(row=8, column=3)
+
+result_label_tab3 = tk.Label(tab3)
+result_label_tab3.grid(row=13, column=0, columnspan=15)
 
 root.mainloop()

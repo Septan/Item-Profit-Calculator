@@ -825,7 +825,7 @@ def calculate():
     # Set the price of each item
     wildflowers_price = 1
     corn_price = 5
-    cabbage_price = 100
+    cabbage_price = 4
     wheat_price = 24
     dandelion_price = 6
     lambs_lettuce_price = 7
@@ -1081,9 +1081,9 @@ def calculate_island():
     grapes_price = 15
     peacocks_price = 8
     lemurs_price = 0
-    mangos_price = 550
-    coconuts_price = 400
-    bananas_price = 1150
+    mangos_price = 30
+    coconuts_price = 22
+    bananas_price = 62
     orange_fizz_price = 200
     peanut_snack_price = 180
     summer_slush_price = 104
@@ -1326,13 +1326,13 @@ def calculate_candy():
     sugar_beets_price = 4
     sugar_cane_price = 4
     cotton_candy_grapes_price = 15
-    alpacas_price = 0
+    alpacas_price = 8
     donkeys_price = 0
-    bonita_almonds_price = 550
-    sweetheart_cherries_price = 400
-    criollo_cacao_price = 1150
-    syrup_price = 0
-    sugar_figures_price = 0
+    bonita_almonds_price = 30
+    sweetheart_cherries_price = 22
+    criollo_cacao_price = 62
+    syrup_price = 200
+    sugar_figures_price = 180
     marzipan_price = 104
     candy_price = 0
     pralines_price = 0

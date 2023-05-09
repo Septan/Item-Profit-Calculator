@@ -873,8 +873,8 @@ def calculate():
     cherry_yoghurt_price = 309
     cream_price = 43
     cheese_price = 123
-    forest_honey_price = 0
-    flower_honey_price = 0
+    forest_honey_price = 250
+    flower_honey_price = 500
 
     # Calculate the total price of all items the user has
     total_price = (num_wildflowers * wildflowers_price) + (num_corn * corn_price) + (num_cabbage * cabbage_price) + (num_wheat * wheat_price) + (num_dandelion * dandelion_price) + (num_lambs_lettuce * lambs_lettuce_price) + (num_carrots * carrots_price) + (num_barley * barley_price) + (num_daisies * daisies_price) + (num_eggs * eggs_price) + (num_pigs * pigs_price) + (num_milk * milk_price) + (num_goats_cheese * goats_cheese_price) + (num_duck_feathers * duck_feathers_price) + (num_sheep_wool * sheep_wool_price) + (num_gray_wool * gray_wool_price) + (num_white_wool * white_wool_price) + (num_apples * apples_price) + (num_cherries * cherries_price) + (num_almonds * almonds_price) + (num_peaches * peaches_price) + (num_lavender * lavender_price) + (num_aloe_vera * aloe_vera_price) + (num_jasmine * jasmine_price) + (num_vanilla * vanilla_price) + (num_cocoa * cocoa_price) + (num_olives * olives_price) + (num_citrus_fruits * citrus_fruits_price) + (num_essence_of_lavender * essence_of_lavender_price) + (num_aloe_vera_gel * aloe_vera_gel_price) + (num_essence_of_jasmine * essence_of_jasmine_price) + (num_vanilla_extract * vanilla_extract_price) + (num_cocoa_powder * cocoa_powder_price) + (num_olive_oil * olive_oil_price) + (num_citrus_oil * citrus_oil_price) + (num_dough * dough_price) + (num_bread * bread_price) + (num_croissant * croissant_price) + (num_apple_strudel * apple_strudel_price) + (num_sachertorte * sachertorte_price) + (num_carrot_cake * carrot_cake_price) + (num_apple_jam * apple_jam_price) + (num_berry_jam * berry_jam_price) + (num_orange_jam * orange_jam_price) + (num_cherry_jam * cherry_jam_price) + (num_peach_jam * peach_jam_price) + (num_butter * butter_price) + (num_cherry_yoghurt * cherry_yoghurt_price) + (num_cream * cream_price) + (num_cheese * cheese_price) + (num_forest_honey * forest_honey_price) + (num_flower_honey * flower_honey_price)
